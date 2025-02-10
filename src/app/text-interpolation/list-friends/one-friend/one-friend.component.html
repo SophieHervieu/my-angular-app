@@ -7,10 +7,11 @@
     <!-- Exemples additionnels -->
     <div class="example">
       <ul>
+        <img [src]=image/>
         <li>Employé : <strong>{{ username }}</strong></li>
         <li>Age : <strong>{{ age }}</strong></li>
         <li>Etat : <strong>{{ username === 'Mark Scout' ? 'Innie' : 'Outie' }}</strong></li>
-        <li>Collègues : <strong>{{ colleagues[0] }}</strong></li>
+        <li>Référent : <strong>{{ colleagues[3] }}</strong></li>
         <li>Date d'émargement : <strong>{{ currentDate }}</strong></li>
         <li class="message"><strong>{{ getWelcomeMessage() }}</strong></li>
       </ul>
