@@ -1,0 +1,17 @@
+<div class="container">
+    <h3>{{ username }}</h3>
+    <p>{{ status }}</p>
+  
+    <p>Bonjour, {{ username }}!</p>
+  
+    <!-- Exemples additionnels -->
+    <div class="example">
+      <ul>
+        <li>Employé : <strong>{{ username }}</strong></li>
+        <li>Age : <strong>{{ age }}</strong></li>
+        <li>Etat : <strong>{{ username === 'Mark Scout' ? 'Innie' : 'Outie' }}</strong></li>
+        <li>Collègues : <strong>{{ colleagues[0] }}</strong></li>
+        <li>Date d'émargement : <strong>{{ currentDate }}</strong></li>
+        <li class="message"><strong>{{ getWelcomeMessage() }}</strong></li>
+      </ul>
+    </div>
