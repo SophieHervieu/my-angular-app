@@ -1,5 +1,9 @@
 <div>
-    <p>List Friends (Text Interpolation)</p>
+    <p class="exercice">List Friends (Text Interpolation)</p>
+    <input type="text" (keyup)="capterEvent($event)"/>
+    <p>{{inputValue}}</p>
+    <p>{{defaultValue}}</p>
+    <button (click)="changeText()">Ajouter (vraiment) un ami</button>
     <button [disabled]= "isDisabled">Ajouter ami</button>
     <app-one-friend></app-one-friend>
 </div>
