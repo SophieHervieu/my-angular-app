@@ -27,3 +27,10 @@ button {
     cursor: pointer;
     margin-bottom: 10px;
 }
+
+.friendsList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

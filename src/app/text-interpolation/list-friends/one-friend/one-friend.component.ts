@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgStyle, NgClass } from '@angular/common';
 
 @Component({
@@ -35,5 +35,7 @@ export class OneFriendComponent {
     } else {
       return " #ffffff";
     }
-  } 
+  }
+
+  @Input() friendData!: { name: string; age: number; email: string };
 }

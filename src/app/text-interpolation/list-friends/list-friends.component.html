@@ -8,5 +8,8 @@
     </ng-template>
     <button (click)="changeText()" *ngIf="inputValue">Ajouter (vraiment) un ami</button>
     <button [disabled]= "isDisabled">Ajouter ami</button>
-    <app-one-friend></app-one-friend>
+    <div class="friendsList">
+        <app-one-friend *ngFor="let friend of listFriendsTab" [friendData]="friend">
+        </app-one-friend>
+    </div>
 </div>
