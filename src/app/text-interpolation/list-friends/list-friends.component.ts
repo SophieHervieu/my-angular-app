@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { OneFriendComponent } from './one-friend/one-friend.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-list-friends',
-  imports: [OneFriendComponent],
+  imports: [OneFriendComponent, CommonModule],
   templateUrl: './list-friends.component.html',
   styleUrl: './list-friends.component.css'
 })
 export class ListFriendsComponent {
   isDisabled: boolean = false;
   inputValue: string = '';
-  defaultValue: string = '🥶 Aucun ami';
+  isFriendAdded: boolean = false;
 
   constructor() {
     setTimeout(() => {
@@ -23,7 +24,9 @@ export class ListFriendsComponent {
     this.inputValue = event.target.value;
   }
 
-  changeText() {
-    this.defaultValue = 'Ami ajouté ! 😎';
+  changeText(): void {
+    if (this.inputValue.trim()) {
+      this.isFriendAdded = true; // Active *ngIf
+    }
   }
 }

@@ -28,4 +28,5 @@ button {
 
 button:disabled {
     background-color: #f10a487e;
+    cursor: none;
 }

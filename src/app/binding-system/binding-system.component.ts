@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 export class BindingSystemComponent {
   inputValue='Mark Scout';
 
-  clearInput() {
+  clearInput(): void {
     this.inputValue = '';
   }
 }

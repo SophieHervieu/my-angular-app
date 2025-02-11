@@ -2,8 +2,11 @@
     <p class="exercice">List Friends (Text Interpolation)</p>
     <input type="text" (keyup)="capterEvent($event)"/>
     <p>{{inputValue}}</p>
-    <p>{{defaultValue}}</p>
-    <button (click)="changeText()">Ajouter (vraiment) un ami</button>
+    <p *ngIf="isFriendAdded; else noFriend">Ami ajouté ! 😎</p>
+    <ng-template #noFriend>
+        <p>🥶 Aucun ami</p>
+    </ng-template>
+    <button (click)="changeText()" *ngIf="inputValue">Ajouter (vraiment) un ami</button>
     <button [disabled]= "isDisabled">Ajouter ami</button>
     <app-one-friend></app-one-friend>
 </div>
