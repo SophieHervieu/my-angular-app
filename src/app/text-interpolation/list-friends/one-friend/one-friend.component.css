@@ -7,7 +7,6 @@
     width: 500px;
     border: 1px solid rgb(197, 235, 248);
     border-radius: 50px;
-    color: rgb(38, 61, 70);
 }
 
 h3 {
@@ -17,6 +16,7 @@ h3 {
 
 ul {
     list-style: none;
+    color: rgb(38, 61, 70);
 }
 
 img {
@@ -30,4 +30,13 @@ li {
 .message {
     text-align: center;
     padding: 20px 0;
+    color: rgb(38, 61, 70);
+}
+
+.amiOn{
+    color: rgb(38, 61, 70);
+  }
+  
+.amiOff{
+    color: rgb(114, 71, 80);
 }

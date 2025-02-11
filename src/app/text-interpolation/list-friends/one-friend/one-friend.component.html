@@ -1,5 +1,5 @@
-<div class="container">
-    <h3>{{ username }}</h3>
+<div class="container" [ngStyle]="{backgroundColor: getColor()}">
+    <h3 [ngClass]="{amiOff: oneFriendStyle === 'Off' ? true : false, amiOn: oneFriendStyle === 'On' ? false : true}">{{ username }}</h3>
     <p>{{ status }}</p>
   
     <p>Bonjour, {{ username }}!</p>
