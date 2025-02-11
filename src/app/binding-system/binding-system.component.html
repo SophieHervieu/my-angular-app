@@ -1,0 +1,7 @@
+<div>
+    <h1>TP-2: Binding System</h1>
+    <p>Nom de l'utilisateur</p>
+    <input type="text" class="form-control" [(ngModel)]="inputValue" />
+    <p>{{inputValue}}</p>
+    <button (click)="clearInput()" [disabled] = "!inputValue">Reset input</button>
+</div>
