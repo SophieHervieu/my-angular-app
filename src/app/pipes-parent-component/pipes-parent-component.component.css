@@ -1,0 +1,8 @@
+.container {
+    height: 81.5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8d5dc;
+    color: #362428;
+    padding: 20px;
+}

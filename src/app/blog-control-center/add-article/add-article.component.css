@@ -1,0 +1,39 @@
+.article-container {
+    background-color: pink;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 26px;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.add {
+    background-color: rgb(82, 82, 82);
+    margin-right: 20px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sketch {
+    background-color: pink;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}

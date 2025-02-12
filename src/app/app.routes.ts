@@ -4,6 +4,8 @@ import { ParentComponent } from './parent/parent.component';
 import { TextInterpolationComponent } from './text-interpolation/text-interpolation.component';
 import { BindingSystemComponent } from './binding-system/binding-system.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesParentComponentComponent } from './pipes-parent-component/pipes-parent-component.component';
+import { BlogControlCenterComponent } from './blog-control-center/blog-control-center.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -11,4 +13,6 @@ export const routes: Routes = [
     { path: 'Text-Interpolation', component: TextInterpolationComponent },
     { path: 'Binding-system', component: BindingSystemComponent },
     { path: 'Directives', component: DirectivesComponent},
+    { path: 'Pipes', component: PipesParentComponentComponent},
+    { path: 'Blog-control-center', component: BlogControlCenterComponent},
 ];

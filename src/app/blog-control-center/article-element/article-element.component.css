@@ -1,0 +1,10 @@
+.single-article {
+    background-color: rgb(1, 177, 177);
+    padding: 20px;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 26px;
+    margin: 0;
+}
