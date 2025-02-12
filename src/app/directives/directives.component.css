@@ -1,0 +1,38 @@
+div {
+    height: 85.8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+button {
+    background-color: #f10a49;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    padding: 20px;
+}
+
+.whiteText {
+    color: white;
+}
+
+.darkBlueText {
+    color: rgb(34, 34, 49);
+}

@@ -1,0 +1,12 @@
+<div>
+    <h1>TP 3 - Directives</h1>
+    <button (click)="addNumber()">Afficher détails</button>
+    <p *ngIf="displayText; else noText">J'ajoute 1 à chaque clic !</p>
+    <ng-template #noText>
+        <p></p>
+    </ng-template>
+    <ul>
+        <li *ngFor="let number of nbArray" [ngStyle]="{backgroundColor: getColor(number)}" [ngClass]="{darkBlueText: textStyle === 'blue' ? true : false, whiteText: textStyle === 'white' ? true : false}">{{number}}</li>
+    </ul>
+</div>
+
