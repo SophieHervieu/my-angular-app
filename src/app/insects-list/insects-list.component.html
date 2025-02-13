@@ -1,0 +1,32 @@
+<div class="container">
+    <h1 class="text-center">Insects List</h1>
+  
+    <!-- Loading Indicator -->
+    <div *ngIf="isLoading" class="text-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  
+    <!-- Error Message -->
+    <div *ngIf="errorMessage" class="alert alert-danger text-center">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Cat Grid -->
+    <div *ngIf="!isLoading && !errorMessage" class="container-container">
+      <div *ngFor="let insect of insects" class="cards-container">
+        <div class="card">
+          <img [src]="insect.url" class="card-img-top" [alt]="insect.url" />
+          <div class="card-body">
+            <p class="card-title text-center">{{ insect.number }}</p>
+            <p class="card-title text-center">{{ insect.genus }}</p>
+            <p class="card-title text-center">{{ insect.species }}</p>
+            <p class="card-title text-center">{{ insect.family }}</p>
+            <p class="card-title text-center">{{ insect.bugGuideId }}</p>
+            <p class="card-title text-center">{{ insect.commonName }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
