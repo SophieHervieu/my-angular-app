@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="text-center">Cats List</h1>
+  
+    <!-- Loading Indicator -->
+    <div *ngIf="isLoading" class="text-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  
+    <!-- Error Message -->
+    <div *ngIf="errorMessage" class="alert alert-danger text-center">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Cat Grid -->
+    <div *ngIf="!isLoading && !errorMessage" class="container-container">
+      <div *ngFor="let cat of cats" class="cards-container">
+        <div class="card">
+          <img [src]="cat.image" class="card-img-top" [alt]="cat.id" />
+          <div class="card-body">
+            <p class="card-title text-center">{{ cat.id }}</p>
+            <p class="card-title text-center">{{ cat.width }}</p>
+            <p class="card-title text-center">{{ cat.height }}</p>
+            <p class="card-title text-center">{{ cat.breeds }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
