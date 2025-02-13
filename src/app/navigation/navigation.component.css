@@ -43,3 +43,8 @@ a:visited {
     display: flex;
     flex-direction: column;
 }
+
+.userAuth {
+    display: flex;
+    flex-direction: column;
+}

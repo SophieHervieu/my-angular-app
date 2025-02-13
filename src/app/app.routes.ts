@@ -9,6 +9,10 @@ import { BlogControlCenterComponent } from './blog-control-center/blog-control-c
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { CatsListComponent } from './cats-list/cats-list.component';
 import { InsectsListComponent } from './insects-list/insects-list.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuardService } from './services/auth-guard/auth-guard.service';
+import { CommunicationComponent } from './communication/communication.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -18,7 +22,10 @@ export const routes: Routes = [
     { path: 'Directives', component: DirectivesComponent},
     { path: 'Pipes', component: PipesParentComponentComponent},
     { path: 'Blog-control-center', component: BlogControlCenterComponent},
-    { path: 'Pokemon-list', component: PokemonListComponent},
-    { path: 'Cats-list', component: CatsListComponent},
-    { path: 'Insects-list', component: InsectsListComponent},
+    { path: 'Pokemon-list', canActivate: [AuthGuardService], component: PokemonListComponent},
+    { path: 'Cats-list', canActivate: [AuthGuardService], component: CatsListComponent},
+    { path: 'Insects-list', canActivate: [AuthGuardService], component: InsectsListComponent},
+    { path: 'Register', component: RegisterComponent},
+    { path: 'Login', component: LoginComponent},
+    { path: 'Communication', component: CommunicationComponent},
 ];
